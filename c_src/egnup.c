@@ -20,7 +20,6 @@ static ErlNifFunc nif_funcs[] =
 static ERL_NIF_TERM egnup_new(ErlNifEnv* env, int argc, const ERL_NIF_TERM argv[])
 {
     gnuplot_ctrl *ctrl = gnuplot_init();
-    ctrl = NULL;
 
     if (ctrl == NULL) {
 	return enif_make_tuple2(env, enif_make_atom(env, "error"), enif_make_atom(env, "gnuplot_init_failed"));
