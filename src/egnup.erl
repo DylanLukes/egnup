@@ -91,8 +91,5 @@ code_change(_OldVsn, State, _Extra) ->
 %% ===================================================================
 -ifdef(TEST).
 
-basic_test() ->
-    {ok, Ref} = new(),
-    ?assertEqual(ok, myfunction(Ref)).
 
 -endif.
